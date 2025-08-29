@@ -5,7 +5,7 @@
     font-size: 16px;
     font-weight:600;
 }
-.main1{
+.menu1{
     height: 50px;
     background-color: rgb(8, 8, 8);
     display: flex;
@@ -60,18 +60,4 @@ ol li:hover .sub-menu1{
     display: block;
     position: absolute;
     left:100px;
-}
-.search{
-    /* background-color: aqua; */
-    width:20%;
-}
-.menu1{
-    width:60%;
-}
-.img1{
-    width:20%;
-}
-input{
-    border-radius:10px;
-    padding: 7px;
 }
