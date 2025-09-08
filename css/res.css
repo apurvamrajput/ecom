@@ -1,0 +1,131 @@
+   *{
+    margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+   
+    /* Navbar main container */
+    .main {
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      height: 60px;
+      flex-wrap: wrap; /* allow wrapping on small screens */
+    }
+
+    /* Logo */
+    .icon {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* Menu */
+    .menu {
+      flex: 1;
+    }
+    .menu ol {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    .menu li {
+      position: relative;
+    }
+    .menu a {
+      text-decoration: none;
+      color: chocolate;
+      padding: 15px 20px;
+      display: block;
+      font-weight: 600;
+    }
+    .menu a:hover {
+      background: green;
+      color: white;
+    }
+
+    /* Dropdown */
+    .sub-menu, .men-menu {
+      display: none;
+      position: absolute;
+      background: black;
+      top: 100%;
+      left: 0;
+      min-width: 150px;
+    }
+    .sub-menu ul, .men-menu ul {
+      list-style: none;
+    }
+    .sub-menu a, .men-menu a {
+      padding: 10px;
+      color: chocolate;
+    }
+    .sub-menu a:hover, .men-menu a:hover {
+      background: green;
+      color: white;
+    }
+
+    .menu li:hover > .sub-menu {
+      display: block;
+    }
+    .sub-menu li:hover > .men-menu {
+      display: block;
+      left: 150px;
+      top: 0;
+    }
+
+    /* Search */
+    .search {
+      display: flex;
+      gap: 5px;
+    }
+    .search input {
+      padding: 5px;
+      border-radius: 3px;
+      border: none;
+    }
+    .search button {
+      background: green;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 900px) {
+      .main {
+        height: auto; /* adjust height */
+        padding: 10px;
+      }
+      .menu ol {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu a {
+        padding: 10px;
+      }
+      .search {
+        width: 100%;
+        margin-top: 10px;
+      }
+      .search input {
+        flex: 1;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .icon {
+        font-size: 18px;
+      }
+      .menu a {
+        font-size: 14px;
+      }
+    }
