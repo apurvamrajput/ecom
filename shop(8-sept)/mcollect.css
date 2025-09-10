@@ -1,0 +1,51 @@
+*{
+    padding:0px;
+    margin:0px;
+    width:100%;
+}
+h1{
+    text-align: center;
+
+}
+
+.pmen{
+    display: flex;
+    justify-content: space-evenly;
+    gap:20px;
+    
+}
+.pmen-card{
+    background-color: aliceblue;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+}
+.brand{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.price{
+    color:green;
+    font-size: 17px;
+}
+
+span{
+    color:rgb(226, 150, 114);
+
+}
+.review{
+    margin-bottom: 10px;;
+}
+.pmen-card img{
+  
+
+ height:450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pmen-card:hover{
+    transform: translateY(5px);
+}
